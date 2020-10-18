@@ -5,6 +5,8 @@ var options = {
 
 new List('sortable-recipe-list', options);
 
+// Ace editors
+
 var editorIngredients = ace.edit("ingredients");
 var editorDirections = ace.edit("directions");
 

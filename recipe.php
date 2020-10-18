@@ -10,7 +10,7 @@
         include 'header.php';
     ?>
     <main>
-    <!-- TODO- PHP to get recipe details from database -->
+    <!-- PHP to get recipe details from database -->
     <?php
         function getRecipeDetailsFromDatabase() {
             $recipeTitle = rawurldecode($_GET["title"]);
@@ -25,6 +25,7 @@
         $recipeDetails = getRecipeDetailsFromDatabase();
     ?>
 <div>
+    <!-- Insert recipe details from database into the page -->
         <h2 class="recipe-title"><?php echo $recipeDetails["title"]; ?></h2>
         <div class="recipe-author">
             <p><?php echo $recipeDetails["author"]; ?></p>
